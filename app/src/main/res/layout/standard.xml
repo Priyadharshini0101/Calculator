@@ -1,0 +1,213 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context=".Standard">
+
+        <EditText
+            android:id="@+id/EditView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:padding="32dp"
+            android:textColor="#918F8F"
+            android:textSize="32sp"
+            android:gravity="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/toolbars"/>
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintTop_toBottomOf="@id/EditView"
+            android:gravity="end"
+            android:maxLength="15"
+            android:padding="32dp"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            />
+
+        <ImageButton
+            android:id="@+id/BackSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/TextView"
+            app:layout_constraintEnd_toEndOf="@id/TextView"
+            app:layout_constraintBottom_toTopOf="@id/GridLayout"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_backspace_24" />
+
+        <GridLayout
+            android:id="@+id/GridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BackSpace">
+
+            <Button
+                android:id="@+id/C"
+                style="@style/standard"
+                android:text="C"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/bracket"
+                style="@style/standard"
+                android:text="()"
+                android:textColor="#7ACBD5" />
+
+            <Button
+                android:id="@+id/modulus"
+                style="@style/standard"
+                android:text="%"
+                android:textColor="#7ACBD5" />
+
+
+            <Button
+                android:id="@+id/divide"
+                style="@style/standard"
+                android:text="÷"
+                android:textColor="#7ACBD5" />
+
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/standard"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/standard"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/standard"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/standard"
+                android:text="×"
+                android:textColor="#7ACBD5" />
+
+            <Button
+                android:id="@+id/four"
+                style="@style/standard"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/standard"
+                android:text="5" />
+
+
+            <Button
+                android:id="@+id/six"
+                style="@style/standard"
+                android:text="6" />
+
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/standard"
+                android:text="-"
+                android:textColor="#7ACBD5" />
+
+            <Button
+                android:id="@+id/one"
+                style="@style/standard"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/standard"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/standard"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/standard"
+                android:text="+"
+                android:textColor="#7ACBD5" />
+
+            <Button
+                android:id="@+id/negative"
+                style="@style/standard"
+                android:text="+/-"
+
+
+                android:textColor="#7ACBD5"
+                android:textSize="28dp" />
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/standard"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/dot"
+                style="@style/standard"
+                android:text="." />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_margin="5dp"
+                android:padding="1dp"
+                android:layout_height="78dp"
+                android:layout_width="85dp"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif-light"
+
+                android:backgroundTint="#7ACBD5"
+                android:text="="
+
+                android:textColor="#FFFFFF"
+                />
+        </GridLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#7ACBD5"
+            android:elevation="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/EditView"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

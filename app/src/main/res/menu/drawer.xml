@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Standard"
+            android:icon="@drawable/baseline_calculate_24"
+            android:title="Standard"
+            />
+        <item android:id="@+id/Scientific"
+            android:icon="@drawable/baseline_science_24"
+            android:title="Scientific" />
+        <item android:id="@+id/Programmer"
+            android:icon="@drawable/baseline_code_24"
+            android:title="Programmer"/>
+        <item android:id="@+id/UnitConverter"
+            android:title="UnitConveter"
+            android:icon="@drawable/baseline_swap_horiz_24"/>
+
+    </group>
+<!--<item android:title="Others">
+        <menu>
+    <item android:id="@+id/Setting"
+        android:icon="@drawable/ic_settings"
+        android:title="Setting"/>
+        </menu>
+</item>-->
+
+</menu>

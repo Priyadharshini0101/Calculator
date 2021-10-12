@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7ACBD5"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Spinner"/>
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View"
+        app:layout_constraintBottom_toTopOf="@id/EditText"/>
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:maxLength="15"
+        android:onClick="Clicked"
+        android:text="1"
+        android:gravity="end"
+        android:textSize="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Spinner" />
+
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ft²"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@id/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@id/EditText" />
+    <View
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7ACBD5"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Spinner1"
+        app:layout_constraintTop_toBottomOf="@id/EditText"/>
+
+    <Spinner
+        android:id="@+id/Spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditText" />
+
+    <EditText
+        android:onClick="Clicked1"
+        android:id="@+id/EditText1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:maxLength="15"
+        android:background="@android:color/transparent"
+        android:text="1"
+        android:gravity="end"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Spinner1" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ft²"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@id/EditText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/EditText1" />
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7ACBD5"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditText1"
+ />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditText1">
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:padding="1dp"
+            android:text="C"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@id/GridLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/BackSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:padding="1dp"
+            android:src="@drawable/baseline_backspace_24"
+            app:layout_constraintBottom_toTopOf="@id/GridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/GridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="5dp"
+            android:rowCount="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BackSpace">
+
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/unitConverter"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/unitConverter"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/unitConverter"
+                android:text="9" />
+
+
+            <Button
+                android:id="@+id/four"
+                style="@style/unitConverter"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/unitConverter"
+                android:text="5" />
+
+
+            <Button
+                android:id="@+id/six"
+                style="@style/unitConverter"
+                android:text="6" />
+
+
+            <Button
+                android:id="@+id/one"
+                style="@style/unitConverter"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/unitConverter"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/unitConverter"
+                android:text="3" />
+
+
+            <Button
+                android:id="@+id/dot"
+                style="@style/unitConverter"
+                android:text="." />
+
+            android:textColor="#7ACBD5"
+            android:textSize="28dp" />
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/unitConverter"
+                android:text="0" />
+            <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+                android:id="@+id/equal"
+                android:layout_margin="1dp"
+                android:padding="1dp"
+                android:layout_height="75dp"
+                android:layout_width="80dp"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif-light"
+
+                android:backgroundTint="#7ACBD5"
+                android:text="="
+
+                android:textColor="#FFFFFF"
+                />
+
+        </GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

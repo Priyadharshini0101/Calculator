@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Programmer">
+    <EditText
+        android:id="@+id/EditView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:padding="32dp"
+        android:textColor="#918F8F"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:fontFamily="sans-serif-light"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/EditView"
+        android:gravity="end"
+        android:padding="32dp"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/BackSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TextView"
+        app:layout_constraintEnd_toEndOf="@id/TextView"
+        app:layout_constraintBottom_toTopOf="@id/GridLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_backspace_24" />
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="8"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView">
+        <Button
+            android:id="@+id/C"
+            style="@style/scientific"
+            android:text="C"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/binary"
+            style="@style/scientific"
+            android:textColor="@color/black"
+            android:text="BIN" />
+
+
+
+        <Button
+            android:id="@+id/decimal"
+            style="@style/scientific"
+            android:textColor="@color/black"
+            android:text="DEC" />
+
+
+        <Button
+            android:id="@+id/octal"
+            style="@style/scientific"
+            android:layout_height="71dp"
+            android:textColor="@color/black"
+            android:text="OCT" />
+        <Button
+            android:id="@+id/hexadecimal"
+            style="@style/scientific"
+            android:textColor="@color/black"
+            android:text="HEX" />
+        <Button
+            android:id="@+id/leftshift"
+            style="@style/scientific"
+
+            android:text="Lsh" />
+
+
+
+
+        <Button
+            android:id="@+id/f"
+            style="@style/scientific"
+            android:text="F"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/e"
+            style="@style/scientific"
+            android:text="E"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/d"
+            style="@style/scientific"
+            android:text="D"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/modulus"
+            style="@style/scientific"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/right_shift"
+            style="@style/scientific"
+            android:text="Rsh" />
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/c"
+            style="@style/scientific"
+            android:text="C"
+            android:enabled="false" />
+
+
+        <Button
+            android:id="@+id/b"
+            style="@style/scientific"
+            android:text="B"
+            android:enabled="false" />
+
+
+        <Button
+            android:id="@+id/a"
+            style="@style/scientific"
+            android:text="A"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/plus"
+            style="@style/scientific"
+            android:text="+"
+            android:textColor="#7ACBD5" />
+
+        <Button
+            android:id="@+id/and"
+            style="@style/scientific"
+            android:layout_height="71dp"
+            android:text="AND" />
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/scientific"
+            android:text="9" />
+
+
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/scientific"
+            android:text="8" />
+        <Button
+            android:id="@+id/seven"
+            style="@style/scientific"
+            android:text="7" />
+        <Button
+            android:id="@+id/minus"
+            style="@style/scientific"
+            android:text="-" />
+
+
+
+
+        <Button
+            android:id="@+id/or"
+            style="@style/scientific"
+            android:text="OR" />
+
+
+
+
+        <Button
+            android:id="@+id/four"
+            style="@style/scientific"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/scientific"
+            android:text="5" />
+
+
+
+        <Button
+            android:id="@+id/six"
+            style="@style/scientific"
+            android:text="6" />
+        <Button
+        android:id="@+id/multiply"
+        style="@style/scientific"
+        android:layout_row="0"
+        android:text="×"
+        android:textColor="#7ACBD5" />
+
+
+        <Button
+            android:id="@+id/not"
+            style="@style/scientific"
+            android:text="NOT" />
+
+
+
+
+        <Button
+            android:id="@+id/one"
+            style="@style/scientific"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/scientific"
+            android:text="2" />
+
+
+        <Button
+            android:id="@+id/three"
+            style="@style/scientific"
+            android:text="3" />
+        <Button
+            android:id="@+id/divide"
+            style="@style/scientific"
+            android:text="÷"
+            android:textColor="#7ACBD5" />
+
+        <Button
+            android:id="@+id/xor"
+            style="@style/scientific"
+            android:text="XOR" />
+
+        <Button
+            android:id="@+id/negative"
+            style="@style/scientific"
+            android:text="+/-"
+            android:textColor="#7ACBD5"
+            android:textSize="28dp" />
+        <Button
+            android:id="@+id/zero"
+            style="@style/scientific"
+            android:text="0" />
+        <Button
+            android:id="@+id/bracket"
+            style="@style/scientific"
+            android:text="()"
+            android:textColor="#7ACBD5">
+
+        </Button>
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_margin="1dp"
+            android:padding="1dp"
+            android:layout_height="75dp"
+            android:layout_width="80dp"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-light"
+
+            android:backgroundTint="#7ACBD5"
+            android:text="="
+
+            android:textColor="#FFFFFF"
+            />
+    </GridLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#7ACBD5"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/EditView"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

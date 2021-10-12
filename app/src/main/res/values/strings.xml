@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+    <string name="Area">Area</string>
+    <string name="Data">Data</string>
+    <string name="Speed">Speed</string>
+    <string name="Time">Time</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Length">Length</string>
+
+
+            <string-array name="Ares">
+        <item name="Acres">Acres(ac)</item>
+        <item name="Ares">Ares(a)</item>
+        <item name="Hectares">Hectares(ha)</item>
+        <item name="Squcenti">Square centimetres(cm²)</item>
+        <item name="Squfeet">Square feet(ft²)</item>
+        <item name="Squinches">Square inches(in²)</item>
+        <item name="Squmeters">Square meters(m²)</item>
+            </string-array>
+    <string-array name="Data">
+        <item name="bits">Bits(bit)</item>
+        <item name="bytes">Bytes(B)</item>
+        <item name="kilo">Kilobytes(KB)</item>
+        <item name="mega">Megabytes(MB)</item>
+        <item name="giga">Gigabytes(GB)</item>
+        <item name="tera">Terabytes(TB)</item>
+    </string-array>
+    <string-array name="Time">
+        <item name="milli">Milliseconds(ms)</item>
+        <item name="sec">Seconds(s)</item>
+        <item name="min">Minutes(m)</item>
+        <item name="hour">Hours(h)</item>
+        <item name="days">Days(d)</item>
+        <item name="weeks">Weeks(wk)</item>
+    </string-array>
+
+    <string-array name="Temperature">
+        <item name="celsius">Celsius(°C)</item>
+        <item name="fahrenheit">Fahrenheit(°F)</item>
+        <item name="kelvin">Kelvin(K)</item>
+    </string-array>
+
+    <string-array name="Length">
+        <item name="milli">Millimetres(mm)</item>
+        <item name="centi">Centimetres(cm)</item>
+        <item name="meter">Metres(m)</item>
+        <item name="kilo">Kilometres(km)</item>
+        <item name="inches">Inches(in)</item>
+        <item name="feet">Feet(ft)</item>
+        <item name="yard">Yards(yd)</item>
+        <item name="mil">Miles(mi)</item>
+    </string-array>
+
+
+
+
+
+    <string name="Standard">Standard</string>
+<string name="Scientific">Scientific</string>
+    <string name="Programmer">Programmer</string>
+    <string name="UnitConverter">UnitConverter</string>
+
+</resources>
+
+
+
